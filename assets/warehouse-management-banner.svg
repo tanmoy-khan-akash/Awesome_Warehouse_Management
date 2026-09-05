@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#070a11"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateY(0px); opacity: 0.8; }
+        50% { transform: translateY(110px); opacity: 1; }
+        100% { transform: translateY(0px); opacity: 0.8; }
+      }
+      @keyframes conveyMove {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -60; }
+      }
+      @keyframes floatBox {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes blinkLight {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+      }
+      @keyframes blinkAmber {
+        0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #f59e0b); }
+        50% { opacity: 0.3; }
+      }
+      .bg-pulse { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .laser-scan { animation: scanBeam 3.5s ease-in-out infinite; }
+      .conveyor-belt { stroke-dasharray: 8 6; animation: conveyMove 2s linear infinite; }
+      .floating-asset { animation: floatBox 4s ease-in-out infinite; }
+      .status-green { animation: blinkLight 2.2s infinite; }
+      .status-amber { animation: blinkAmber 1.8s infinite; }
+      .wire-flow { stroke-dasharray: 10 15; animation: conveyMove 3s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1196" height="356" x="2" y="2" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" stroke-opacity="0.35" rx="15"/>
+
+  <!-- High-tech Grid Background Pattern -->
+  <g opacity="0.07" stroke="#38bdf8" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="360"/>
+    <line x1="260" y1="0" x2="260" y2="360"/>
+    <line x1="360" y1="0" x2="360" y2="360"/>
+    <line x1="460" y1="0" x2="460" y2="360"/>
+    <line x1="560" y1="0" x2="560" y2="360"/>
+    <line x1="660" y1="0" x2="660" y2="360"/>
+    <line x1="760" y1="0" x2="760" y2="360"/>
+    <line x1="860" y1="0" x2="860" y2="360"/>
+    <line x1="960" y1="0" x2="960" y2="360"/>
+    <line x1="1060" y1="0" x2="1060" y2="360"/>
+    <line x1="1160" y1="0" x2="1160" y2="360"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="180" r="130" fill="url(#cyanGlow)" filter="url(#glow)" class="bg-pulse"/>
+  <circle cx="1020" cy="180" r="140" fill="#6366f1" opacity="0.15" filter="url(#glow)" class="bg-pulse" style="animation-delay: -3s;"/>
+
+  <!-- Left Side: Automated Warehouse Isometric Grid / Racking System -->
+  <g transform="translate(60, 65)">
+    <!-- High-rise Warehouse Rack 1 -->
+    <rect x="0" y="20" width="80" height="190" fill="url(#boxGrad1)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" rx="4"/>
+    <!-- Rack Shelves -->
+    <line x1="0" y1="70" x2="80" y2="70" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+    <line x1="0" y1="120" x2="80" y2="120" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+    <line x1="0" y1="170" x2="80" y2="170" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+
+    <!-- Stored Pallets / Inventory Boxes -->
+    <rect x="10" y="32" width="60" height="30" fill="#1e293b" stroke="#0ea5e9" stroke-width="1" rx="2"/>
+    <rect x="18" y="42" width="22" height="4" fill="#38bdf8" opacity="0.7"/>
+    <circle cx="58" cy="44" r="3" fill="#10b981" class="status-green"/>
+
+    <rect x="10" y="82" width="60" height="30" fill="#1e293b" stroke="#f59e0b" stroke-width="1" rx="2"/>
+    <rect x="18" y="92" width="26" height="4" fill="#fbbf24" opacity="0.7"/>
+    <circle cx="58" cy="94" r="3" fill="#f59e0b" class="status-amber"/>
+
+    <rect x="10" y="132" width="60" height="30" fill="#1e293b" stroke="#8b5cf6" stroke-width="1" rx="2"/>
+    <rect x="18" y="142" width="20" height="4" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="58" cy="144" r="3" fill="#10b981" class="status-green"/>
+
+    <rect x="10" y="178" width="60" height="26" fill="#1e293b" stroke="#0ea5e9" stroke-width="1" rx="2"/>
+
+    <!-- High-rise Warehouse Rack 2 -->
+    <rect x="100" y="20" width="80" height="190" fill="url(#boxGrad1)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" rx="4"/>
+    <line x1="100" y1="70" x2="180" y2="70" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+    <line x1="100" y1="120" x2="180" y2="120" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+    <line x1="100" y1="170" x2="180" y2="170" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+
+    <rect x="110" y="32" width="60" height="30" fill="#1e293b" stroke="#10b981" stroke-width="1" rx="2"/>
+    <circle cx="158" cy="44" r="3" fill="#10b981" class="status-green"/>
+
+    <rect x="110" y="82" width="60" height="30" fill="#1e293b" stroke="#38bdf8" stroke-width="1" rx="2"/>
+    <circle cx="158" cy="94" r="3" fill="#10b981" class="status-green"/>
+
+    <rect x="110" y="132" width="60" height="30" fill="#1e293b" stroke="#ec4899" stroke-width="1" rx="2"/>
+    <circle cx="158" cy="144" r="3" fill="#ec4899" class="status-amber"/>
+
+    <!-- Vertical Automated Crane / AS-RS Mast -->
+    <line x1="90" y1="10" x2="90" y2="220" stroke="#94a3b8" stroke-width="3"/>
+    <rect x="83" y="100" width="14" height="20" fill="#38bdf8" filter="url(#softGlow)" rx="2"/>
+
+    <!-- Barcode Scanner Beam Scanning Box -->
+    <g class="laser-scan">
+      <line x1="10" y1="35" x2="70" y2="35" stroke="#f43f5e" stroke-width="2.5" filter="url(#softGlow)"/>
+      <polygon points="10,35 70,35 65,48 15,48" fill="url(#laserGrad)" opacity="0.4"/>
+    </g>
+
+    <!-- Conveyor Belt System underneath -->
+    <rect x="-10" y="222" width="205" height="12" fill="#1e293b" rx="3"/>
+    <line x1="-10" y1="228" x2="195" y2="228" stroke="#38bdf8" stroke-width="2.5" class="conveyor-belt"/>
+  </g>
+
+  <!-- Center Typography & Branding -->
+  <g transform="translate(300, 85)">
+    <!-- Ecosystem Tag -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="240" height="28" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" rx="14"/>
+      <circle cx="14" cy="14" r="4.5" fill="#38bdf8" class="status-green"/>
+      <text x="26" y="18" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">ENTERPRISE &amp; OPEN-SOURCE WMS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="78" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Awesome Warehouse</text>
+    <text x="0" y="128" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Management Systems</text>
+
+    <!-- Subtitle & Pillars -->
+    <text x="0" y="165" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" letter-spacing="0.2">
+      Curated Stack for Fulfillment, 3PL Operations, Inventory Control &amp; Automation
+    </text>
+
+    <!-- Tech Badges inside banner -->
+    <g transform="translate(0, 190)">
+      <rect x="0" y="0" width="105" height="26" fill="#0f172a" stroke="#334155" rx="6"/>
+      <text x="12" y="17" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">📦 SaaS &amp; 3PL</text>
+
+      <rect x="115" y="0" width="135" height="26" fill="#0f172a" stroke="#334155" rx="6"/>
+      <text x="127" y="17" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">⚡ Open Source WMS</text>
+
+      <rect x="260" y="0" width="135" height="26" fill="#0f172a" stroke="#334155" rx="6"/>
+      <text x="272" y="17" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">🤖 Automation &amp; AMR</text>
+
+      <rect x="405" y="0" width="135" height="26" fill="#0f172a" stroke="#334155" rx="6"/>
+      <text x="417" y="17" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">📊 Pricing &amp; Metrics</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Logistics & Supply-Chain Topology Network -->
+  <g transform="translate(930, 60)" class="floating-asset">
+    <rect x="90" y="80" width="85" height="85" fill="#1e1b4b" stroke="#818cf8" stroke-width="2" rx="12" filter="url(#softGlow)"/>
+    <text x="132" y="118" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="800">WMS</text>
+    <text x="132" y="136" text-anchor="middle" fill="#818cf8" font-family="sans-serif" font-size="10" font-weight="700">CORE</text>
+
+    <!-- Surrounding Nodes -->
+    <circle cx="40" cy="35" r="24" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+    <text x="40" y="39" text-anchor="middle" fill="#38bdf8" font-family="sans-serif" font-size="9.5" font-weight="700">ERP</text>
+    <line x1="58" y1="50" x2="95" y2="85" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" class="wire-flow"/>
+
+    <circle cx="220" cy="35" r="24" fill="#0f172a" stroke="#34d399" stroke-width="1.8"/>
+    <text x="220" y="39" text-anchor="middle" fill="#34d399" font-family="sans-serif" font-size="9.5" font-weight="700">3PL</text>
+    <line x1="202" y1="50" x2="165" y2="85" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.6" class="wire-flow"/>
+
+    <circle cx="40" cy="205" r="24" fill="#0f172a" stroke="#f59e0b" stroke-width="1.8"/>
+    <text x="40" y="209" text-anchor="middle" fill="#f59e0b" font-family="sans-serif" font-size="9.5" font-weight="700">SCAN</text>
+    <line x1="58" y1="190" x2="95" y2="155" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.6" class="wire-flow"/>
+
+    <circle cx="220" cy="205" r="24" fill="#0f172a" stroke="#ec4899" stroke-width="1.8"/>
+    <text x="220" y="209" text-anchor="middle" fill="#ec4899" font-family="sans-serif" font-size="9.5" font-weight="700">AMR</text>
+    <line x1="202" y1="190" x2="165" y2="155" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.6" class="wire-flow"/>
+  </g>
+</svg>
