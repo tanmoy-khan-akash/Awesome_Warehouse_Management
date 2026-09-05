@@ -1,41 +1,32 @@
-# Awesome-Warehouse-Management
-
 <div align="center">
+	<h1><a>Awesome Warehouse Management</a></h1>
+</div>
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+----------------------------------------------------------------------------------------------------------------------------------
 
-<br/>
-
-<img src="assets/banner.svg" alt="Awesome Warehouse Management Systems Banner" width="100%"/>
+![](assets/banner.svg)
 
 ### 🏭 The Definitive Ecosystem of Warehouse Management Systems (WMS), Inventory Control & Supply Chain Automation
 
 **Curated Catalog of SaaS Enterprise Solutions & Open-Source Projects**  
-*Covering WMS, Inventory Tracking, Order Fulfillment, Pick-Pack-Ship, 3PL Operations, Material Flow Control (MFC) & Barcode Automation*
+* Covering WMS, Inventory Tracking, Order Fulfillment, Pick-Pack-Ship, 3PL Operations, Material Flow Control (MFC) & Barcode Automation *
 
 **📅 Last updated: August 2026**
 
-</div>
+----------------------------------------------------------------------------------------------------------------------------------
 
----
-
-## 📑 Table of Contents
+### 📑 Table of Contents
 
 - [🔍 Overview & SEO Highlights](#-overview--seo-highlights)
 - [📦 Top SaaS / Hosted Warehouse Management Platforms](#-top-saas--hosted-warehouse-management-platforms)
 - [⚡ Top Open-Source WMS & Inventory Projects](#-top-open-source-wms--inventory-projects)
 - [🏗️ Open-Source WMS Architecture](#-open-source-wms-architecture)
 - [❓ Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
-- [🤝 How to Contribute](#-how-to-contribute)
-- [⭐ Star History](#-star-history)
 - [📜 License & Disclaimer](#-license--disclaimer)
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## 🔍 Overview & SEO Highlights
+### 🔍 Overview & SEO Highlights
 
 **Warehouse Management Systems (WMS)** are mission-critical software platforms that control and optimize day-to-day warehouse operations. From receiving, put-away, slotting, inventory tracking, batch and serial tracking, to wave picking, packing, multi-carrier shipping, 3PL client billing, and robotics/automation orchestration (WCS/MFC).
 
@@ -45,11 +36,11 @@
 - **Enterprise & Distribution Centers:** Complex cross-docking, automated storage & retrieval systems (ASRS), conveyor integrations, labor management.
 - **Self-Hosted & Open-Source Operations:** Modular ERP-integrated inventory, air-gapped security, customized barcode workflows, and hardware integration.
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## 📦 Top SaaS / Hosted Warehouse Management Platforms
+### 📦 Top SaaS / Hosted Warehouse Management Platforms
 
-*Ranked in **descending order** by company valuation / market capitalization / revenue.*
+* Ranked in **descending order** by company valuation / market capitalization / revenue. *
 
 | # | 🏢 Platform | 📝 Description & Core Strengths | 💰 Company Size / Valuation | 🏷️ Starting Pricing | 🎁 Free Tier / Free Trial Limits |
 |---|---|---|---|---|---|
@@ -80,11 +71,11 @@
 | 25 | **[CartonCloud](https://www.cartoncloud.com/)** | Integrated WMS and TMS (Transport Management System) engineered for 3PL providers, cold chain logistics, automated invoicing, and mobile driver apps. | **~$30M Valuation** ($10M+ ARR) | **$430 / month** (Starter tier based on usage volume) | **14-day guided discovery trial** & interactive live operational demo |
 | 26 | **[Shipedge](https://shipedge.com/)** | Modular supply chain and warehouse management software designed for ecommerce 3PLs, cross-docking, multi-channel orders, and returns processing. | **~$25M Valuation** ($8M+ ARR) | **$500 / month** (Tier 1 plan for up to 1,500 orders/month) | **14-day trial** / personalized solution engineer test session |
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## ⚡ Top Open-Source WMS & Inventory Projects
+### ⚡ Top Open-Source WMS & Inventory Projects
 
-*Ranked in **descending order** by GitHub Star count. Each star badge directly links to that project's stargazers.*
+* Ranked in **descending order** by GitHub Star count. Each star badge directly links to that project's stargazers. *
 
 | # | 🌟 Project & Repo | ⭐ Github_Stars | 📋 Tech Stack & Focus | 💡 Key Capabilities |
 |---|---|:---:|---|---|
@@ -107,9 +98,9 @@
 | 17 | **[Sentry WMS](https://github.com/hightower-systems/sentry-wms)** | [![GitHub stars](https://img.shields.io/github/stars/hightower-systems/sentry-wms?style=social)](https://github.com/hightower-systems/sentry-wms/stargazers) | **Node.js / Vue / PostgreSQL**<br/>*Barcode-First Execution System* | Designed around handheld RF barcode scanners for receiving, put-away, wave picking, packing stations, and courier label printing. |
 | 18 | **[Tryton](https://github.com/tryton/tryton)** | [![GitHub stars](https://img.shields.io/github/stars/tryton/tryton?style=social)](https://github.com/tryton/tryton/stargazers) | **Python / PostgreSQL**<br/>*Modular High-Reliability ERP* | Warehouse shipment planning, internal stock moves, product lead times, inventory reordering rules, and lot traceability. |
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## 🏗️ Open-Source WMS Architecture
+### 🏗️ Open-Source WMS Architecture
 
 Building an enterprise-ready, self-hosted warehouse execution ecosystem typically combines the following software layers:
 
@@ -122,9 +113,9 @@ graph TD
     B --> F[(🗄️ Database & Event Stream<br/>PostgreSQL / Redis / Apache Kafka)]
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## ❓ Frequently Asked Questions (FAQ)
+### ❓ Frequently Asked Questions (FAQ)
 
 <details>
 <summary><b>1. What is the difference between a WMS, WES, and WCS?</b></summary>
@@ -150,34 +141,13 @@ Yes! For organizations with software engineering resources, self-hosted open-sou
 - **Odoo Inventory:** 100% free forever for unlimited users under the "One App Free" plan on Odoo Online.
 </details>
 
----
+----------------------------------------------------------------------------------------------------------------------------------
 
-## 🤝 How to Contribute
-
-Contributions, updates, and additions are warmly welcomed! 🚀
-
-1. 🍴 **Fork the repository**
-2. 🌿 **Create a new branch** (`git checkout -b feature/add-wms-entry`)
-3. 📝 **Add or update entries** following the markdown table structure (include exact links, verified starting pricing, and free trial terms)
-4. 📬 **Submit a Pull Request** with a descriptive summary of changes
-
----
-
-## ⭐ Star History
-
-<div align="center">
-
-[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Warehouse-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Warehouse-Management&type=date&legend=top-left)
-
-</div>
-
----
-
-## 📜 License & Disclaimer
+### 📜 License & Disclaimer
 
 - Distributed under the **MIT License**. See `LICENSE` for more information.
 - This repository is a **community-curated index** intended for educational, architectural, and operational evaluation. All brand names, logos, and trademarks belong to their respective owners.
 
-<div align="center">
-  <sub>Built with ❤️ for warehouse operators, 3PLs, logistics engineers, and software architects worldwide.</sub>
-</div>
+----------------------------------------------------------------------------------------------------------------------------------
+
+These resources are perfect for both beginners and advanced learners. 
